@@ -66,9 +66,7 @@ html, body {
   background-attachment: fixed;
 	
 }
-.topNav{
-	background-color: black;
-}
+
 .center {
     width: 90%;
 	min-width: 300px;
@@ -81,45 +79,51 @@ html, body {
 
    
 #logo {
-	width: 320px;
-	margin-top: 10px;
+	width: 60%;
+	max-width: 500px;
+	margin-top: 0px;
 	margin-bottom: 50px;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 90px;
 }
 
 h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
 	font-size: 5em;
-	font-weight: bolder;
-	margin-top: 3em;
+	margin-top: 40px;
     margin: 0px auto 10px auto;
-    color: #615B62;
-	font-family: 'Merriweather', serif;
+    color: #504852;
+	font-family: 'Abril Fatface';
 }
 
 h2 {
 	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
-	font-size: 2em;
+	font-size: 1.6em;
     line-height: 1.4;
     color: rgba(14, 3, 34, 0.857);
-    padding: 15px 0px;
+    padding: 25px 0px;
     margin: 0px auto 10px auto;
 	font-family: 'Poppins', sans-serif;
 }
 
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
-	font-size: 1.2em;
+	font-size: 1.4em;
     line-height: 1.6;
     color: rgba(14, 3, 34, 0.857);
 	font-family: 'Poppins', sans-serif;
 }
 
+/*.topNav{
+	display: inline-block;
+	border: 10 px solid blue;
+	align-items: center;
+}*/
+
 nav {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.1em;
-	width: 60%;
+	font-size: 1.2em;
+	width: 100%;
 	margin: 0 auto;
 	/*border: solid;*/
 	color:rgba(14, 3, 34, 0.857);
@@ -157,3 +161,239 @@ h2{
 	line-height: 1.5em;
 }
 }
+
+
+	/* #primary_nav_wrap
+	{
+		margin-top:15px
+	}
+
+	#primary_nav_wrap ul
+	{
+		list-style:none;
+		position:relative;
+		float:left;
+		margin:0;
+		padding:0
+	}
+
+	#primary_nav_wrap ul a
+	{
+		display:block;
+		color:#333;
+		text-decoration:none;
+		font-weight:700;
+		font-size:1em;
+		line-height:32px;
+		padding:0 30px;
+	}
+
+	#primary_nav_wrap ul li
+	{
+		position:relative;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+
+	#primary_nav_wrap ul li.current-menu-item
+	{
+		background: None;
+	}
+
+	#primary_nav_wrap ul li:hover
+	{
+		background:#f6f6f6
+	}
+
+	#primary_nav_wrap ul ul
+	{
+		display:none;
+		position:absolute;
+		top:100%;
+		left:0;
+		background:#fff;
+		padding:0
+	}
+
+	#primary_nav_wrap ul ul li
+	{
+		float:none;
+		width:200px
+	}
+
+	#primary_nav_wrap ul ul a
+	{
+		line-height:120%;
+		padding:10px 15px
+	}
+
+	#primary_nav_wrap ul ul ul
+	{
+		top:0;
+		left:100%
+	}
+
+	#primary_nav_wrap ul li:hover > ul
+	{
+		display:block
+	} */
+	
+	
+	@mixin clearfix {
+		&:after {
+		display: table;
+		clear: both;
+		}
+		}
+		html {
+		box-sizing: border-box;
+		}
+		*, *:before, *:after {
+		box-sizing: inherit;
+		}
+		
+		body {
+		background-color: rgb(0, 0, 0);
+		min-height: 100%;
+		}
+		
+		a {
+		text-decoration: none;
+		color: inherit
+		}
+		
+		.main-header {
+		background-color: rgba(172, 147, 172, 0.719);
+		padding: 5px 40px 10px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		@media (min-width: 1025px) {
+		.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+		}
+		}
+		
+		.name {
+		color: white;
+		font-size: 1.35em;
+		margin: 0;
+		}
+		a {
+		text-align: center;
+		display: block;
+		padding: 10px 15px;
+		}
+		
+		.main-nav {
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		}
+		a {
+		text-align: center;
+		display: inline-block;
+		padding: 10px 15px;
+		font-size: .95em;
+		color:  #3b283e;
+		text-transform: uppercase;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+  #profile{
+	width: 60%;
+	max-width: 500px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	text-align: center;
+	border-radius: 200px;
+  }
+
+
+   /* Code for cards */
+
+/* sets everything to zero */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .cardphoto img {
+    display: block;
+    max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+  }
+ 
+  /* make the Section class cards here.  */
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+ 
+  /* make the card flex. The default is row so change flex direction to vertical. */
+  .card {
+    background-color: rgb(156, 155, 155);
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cardphoto {
+    max-height: 250px;
+    overflow: hidden;
+  }
+ 
+  .cardarticle {
+    padding: 2.5rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardH1 {
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+ 
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+ 
+  .card footer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #191919;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3{
+      color:#444;
+  }
+ 
+  .card p {
+      color: rgb(0, 0, 0);
+  }
